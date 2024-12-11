@@ -1,0 +1,10 @@
+
+
+select option{
+    background-color: rgb(5 46 22 );
+    border: none;
+}
+
+form input{
+    display: block;
+}
