@@ -1,0 +1,38 @@
+form{
+    border: 2px solid white;
+    width: 40%;
+    margin: auto;
+    height: 100%;
+    padding: 5% 0;
+    align-content: center;
+    border-radius: 20px;
+}
+
+
+@media (max-width:760px){
+    form{
+        border: 2px solid white;
+        width:80%;
+        margin: auto;
+        height: 100%;
+        padding: 9% 0;
+        align-content: center;
+        border-radius: 20px;
+        margin-top: 5%;
+    }
+
+    form .input-ctn{
+    width: 90%;
+    }
+
+    option{
+       font-size: 12px; 
+    }
+}
+
+@media (max-width:600px){
+    form{
+        width:100%;
+    }
+
+}

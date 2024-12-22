@@ -1,4 +1,7 @@
 
+body{
+    background-image: url(./assets/nun_bg.png);
+}
 
 select option{
     background-color: rgb(5 46 22 );

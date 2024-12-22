@@ -1,14 +1,19 @@
 import { useState } from 'react'
 import './App.css'
-import Landing from './auth/landing'
-import Signup from './auth/Signup'
+import './components/auth/auth.css'
+import Confirm_code from './components/auth/Comfirm_code'
+// import Landing from './components/auth/landing'
+// import Signup from './components/auth/Signup'
 
 function App() {
 
   return (
     <>
+  <Confirm_code/>
 {/* <Landing/> */}
-<Signup/>
+{/* <Signup/> */}
+
+
     </>
   )
 }
