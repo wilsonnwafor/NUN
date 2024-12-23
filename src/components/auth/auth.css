@@ -1,38 +1,56 @@
-form{
+form {
+  background-image: linear-gradient(#0d4d5c, #03222e);
+  border: 3px solid #0b805f;
+  width: 40%;
+  margin: auto;
+  height: 100%;
+  padding: 5% 0;
+  align-content: center;
+  border-radius: 20px;
+}
+
+.otp-ctn {
+  display: flex;
+  gap: 5%;
+}
+
+.otp-ctn .otp-inp {
+  border-radius: 10px;
+  border: 1px solid #ffffff41;
+  background-color: #ffffff4f;
+}
+
+@media (max-width: 760px) {
+  form {
     border: 2px solid white;
-    width: 40%;
+    width: 80%;
     margin: auto;
     height: 100%;
-    padding: 5% 0;
+    padding: 9% 0;
     align-content: center;
     border-radius: 20px;
-}
+    margin-top: 5%;
+  }
 
-
-@media (max-width:760px){
-    form{
-        border: 2px solid white;
-        width:80%;
-        margin: auto;
-        height: 100%;
-        padding: 9% 0;
-        align-content: center;
-        border-radius: 20px;
-        margin-top: 5%;
-    }
-
-    form .input-ctn{
+  form .input-ctn {
     width: 90%;
-    }
+  }
 
-    option{
-       font-size: 12px; 
-    }
+  option {
+    font-size: 12px;
+  }
 }
 
-@media (max-width:600px){
-    form{
-        width:100%;
-    }
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+  }
 
+  .otp-ctn .otp-inp {
+    border-radius: 8px;
+    width: 45px;
+    height: 50px;
+    border: 1px solid #ffffff41;
+    background-color: #ffffff4f;
+  }
 }
