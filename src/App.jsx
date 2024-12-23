@@ -9,10 +9,10 @@ function App() {
 
   return (
     <>
-  <Confirm_code/>
+
 {/* <Landing/> */}
 {/* <Signup/> */}
-
+  <Confirm_code/>
 
     </>
   )
