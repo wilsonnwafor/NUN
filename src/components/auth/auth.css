@@ -1,12 +1,56 @@
+
 form {
   background-image: linear-gradient(#0d4d5c, #03222e);
-  border: 3px solid #0b805f;
+  border: 3px solid var(--teal-grn);
   width: 40%;
   margin: auto;
   height: 100%;
   padding: 5% 0;
   align-content: center;
   border-radius: 20px;
+}
+
+form .input-ctn{
+  width: 85%;
+  border-radius: 15px;
+  margin:3% auto;
+  border: 1px solid #ffffff8e;
+  background-color: #ffffff1f;
+
+}
+
+.input-ctn input{
+  padding-bottom: 1%;
+}
+
+input::placeholder{
+font-size: 20px;
+}
+
+
+form fieldset{
+  border-top: 1px solid var(--teal-grn);
+  width: 80%;
+  margin: auto;
+  color: var(--teal-grn);
+}
+
+form fieldset legend{
+  padding: 0 1%;
+  padding-bottom: 2%;
+
+}
+
+.regPwd{
+  display: none;
+}
+
+.regPwd#drop{
+  display: flex;
+}
+
+.emailBtn#drop{
+  display: none;
 }
 
 .otp-ctn {
@@ -26,19 +70,28 @@ form {
     width: 80%;
     margin: auto;
     height: 100%;
-    padding: 9% 0;
+    padding: 5% 0;
     align-content: center;
     border-radius: 20px;
-    margin-top: 5%;
+    margin-top: 1%;
+  }
+
+  option {
+    font-size: 12px;
   }
 
   form .input-ctn {
     width: 90%;
   }
 
-  option {
-    font-size: 12px;
+  .input-ctn input{
+    padding-bottom: 2%;
+}
+
+input::placeholder{
+  font-size: 15px;
   }
+
 }
 
 @media (max-width: 600px) {
@@ -53,4 +106,12 @@ form {
     border: 1px solid #ffffff41;
     background-color: #ffffff4f;
   }
+
+  .input-ctn input{
+        padding-bottom: 5%;
+  }
+
+  input::placeholder{
+    font-size: 13px;
+    }
 }

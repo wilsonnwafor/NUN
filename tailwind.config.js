@@ -21,7 +21,9 @@ export default {
       animation: {
         "caret-blink": "caret-blink 1.25s ease-out infinite",
       },
-  		colors: {}
+  		colors: {
+        "teal-green": '#008F72',
+      }
   	}
   },
   plugins: [require("tailwindcss-animate")],

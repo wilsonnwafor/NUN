@@ -1,10 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 import './components/auth/auth.css'
-import Confirm_code from './components/auth/Comfirm_code'
-// import Landing from './components/auth/landing'
-// import Signup from './components/auth/Signup'
 
+
+// import Landing from './components/auth/landing'
+import Signup from './components/auth/Signup'
+import Reset_pwd from './components/auth/Reset_pwd'
+import Setup_pwd from './components/auth/Setup_pwd'
+// import Login from './components/auth/Login'
+// import Confirm_code from './components/auth/Comfirm_code'
 function App() {
 
   return (
@@ -12,7 +16,10 @@ function App() {
 
 {/* <Landing/> */}
 {/* <Signup/> */}
-  <Confirm_code/>
+{/* <Login/> */}
+  {/* <Confirm_code/> */}
+  {/* <Reset_pwd/> */}
+  <Setup_pwd/>
 
     </>
   )

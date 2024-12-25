@@ -1,6 +1,17 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --teal-grn:#008F72;
+  }
 body{
     background-image: url(./assets/nun_bg.png);
+}
+
+button{
+    cursor: pointer;
+    transition: 500ms;
 }
 
 select option{
