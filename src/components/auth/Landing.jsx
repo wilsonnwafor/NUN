@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Landing() {
   return (
     <>
-      <body>
+
         <main className="h-screen text-center content-center">
           <select
             name=""
@@ -18,14 +19,19 @@ export default function Landing() {
             alt=""
             className="w-2/4 m-auto max-md:w-3/4"
           />
-          <button className="text-teal-50 border-2 border-teal-green rounded-xl hover:bg-teal-green w-28 p-1 m-3 max-md:p-0 max-md:w-24">
-            LOGIN
-          </button>
-          <button className="text-teal-50 border-2  border-teal-green rounded-xl hover:bg-teal-green  w-28 p-1 m-3 max-md:p-0 max-md:w-24">
-            SIGN UP
-          </button>
+          <Link to="/Signup">
+            <button className="text-teal-50 border-2  border-teal-green rounded-xl hover:bg-teal-green  w-28 p-1 m-3 max-md:p-0 max-md:w-24">
+              {" "}
+              SIGN UP
+            </button>
+          </Link>
+          <Link to="/Login">
+            <button className="text-teal-50 border-2 border-teal-green rounded-xl hover:bg-teal-green w-28 p-1 m-3 max-md:p-0 max-md:w-24">
+              {" "}
+              LOGIN
+            </button>
+          </Link>
         </main>
-      </body>
     </>
   );
 }

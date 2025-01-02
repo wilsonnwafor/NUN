@@ -5,6 +5,7 @@ import {
   InputOTPGroup,
   InputOTPSlot,
 } from "@/components/ui/input-otp";
+import { Link } from "react-router-dom";
 
 export default function Comfirm_code() {
   const [value, setValue] = React.useState("");
@@ -32,9 +33,9 @@ export default function Comfirm_code() {
             // className="max-md:w-10/12 max-md:h-48 max-md:text-xs "
           >
             <header className="mb-5 text-sm max-md:mb-3 max-xs:text-xs">
-              <a className=" text-teal-200 cursor-pointer">SIGN UP</a>{" "}
-              <b className="text-white ">/ </b>{" "}
-              <a className=" text-teal-500 cursor-pointer">LOGIN</a>
+            <Link to="/Signup" className=" text-teal-200 cursor-default">SIGN UP</Link >
+              <b className="text-white ">/ </b>
+              <Link to="/Login" className=" text-teal-500  cursor-pointer">LOGIN</Link>
             </header>
 
             <h3 className="text-teal-300 text-base max-md:text-sm max-sm:text-xs">
@@ -49,7 +50,7 @@ export default function Comfirm_code() {
               <InputOTP
                 maxLength={6}
                 value={value}
-                onChange={(value) => setValue(value)}
+                onChange={(value) => setValue(value)}            
               >
                 <InputOTPGroup className="otp-ctn m-auto">
                   <InputOTPSlot index={0} className="otp-inp" />
@@ -60,7 +61,7 @@ export default function Comfirm_code() {
                   <InputOTPSlot index={5} className="otp-inp" />
                 </InputOTPGroup>
               </InputOTP>
-              <p className="text-teal-600 text-sm max-md:text-xs">click to resend code</p>
+              <p className="text-teal-600 text-sm max-md:text-xs cursor-pointer">click to resend code</p>
             </div>
           </form>
         </div>

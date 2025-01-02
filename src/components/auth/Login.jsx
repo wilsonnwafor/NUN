@@ -3,6 +3,7 @@ import {
   FaAngleRight,
   FaWallet,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 // import { FaAnglesRight } from "react-icons/fa6";
 
 export default function Login() {
@@ -30,12 +31,11 @@ export default function Login() {
 
           <form
             action=""
-            // className="max-md:w-10/12 max-md:h-48 max-md:text-xs "
           >
             <header className="mb-10 max-md:mb-5 max-md:text-xs">
-              <a className=" text-teal-500  cursor-pointer">SIGN UP</a>{" "}
-              <b className="text-white ">/ </b>{" "}
-              <a className=" text-teal-200 border-b-2 cursor-pointer">LOGIN</a>
+            <Link to="/Signup" className=" text-teal-500 cursor-pointer">SIGN UP</Link >
+              <b className="text-white ">/ </b>
+              <Link to="/Login" className=" text-teal-200  cursor-pointer">LOGIN</Link>
             </header>
             {/* input block */}
             <p className="input-ctn flex bg-neutral-500 text-white justify-between px-3 h-8 items-center  max-md:h-7">
