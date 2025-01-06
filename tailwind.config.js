@@ -23,6 +23,7 @@ export default {
       },
   		colors: {
         "teal-green": '#008F72',
+        "pri-green": "#00d19d"
       }
   	}
   },

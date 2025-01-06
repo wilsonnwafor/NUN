@@ -16,7 +16,10 @@ form .input-ctn{
   margin:3% auto;
   border: 1px solid #ffffff8e;
   background-color: #ffffff1f;
+}
 
+.input-ctn  input:hov {
+  border: 10px solid #015a00c1;
 }
 
 .input-ctn input{

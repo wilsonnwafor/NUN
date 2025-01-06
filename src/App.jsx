@@ -21,8 +21,8 @@ function App() {
         <Route path="/Mytest" element={<Mytest />} />
       </Routes>
 
-      {/* <Reset_pwd />
-      <Setup_pwd /> */}
+      <Reset_pwd />
+      <Setup_pwd />
     </>
   );
 }

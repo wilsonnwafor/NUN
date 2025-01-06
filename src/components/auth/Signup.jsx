@@ -13,14 +13,39 @@ export default function Signup() {
   const [error, setError] = useState("");
   const navi = useNavigate();
 
-  function signup_validator() {
-    if (regInp.pwd == "") {
+function email_check(){
+  if (regInp.email == "") {
+    setError("Enter an email");
+    setRegPwd(false);
+  } else if(regInp.email){
+    // () => setRegPwd(!regPwd)
+    setRegPwd(true);
+  } 
+}
+
+function email_input(e){
+      setError("");
+      setRegInp({ ...regInp, email: e.target.value });
+
+}
+
+  function pwd_check() {
+ if (regInp.pwd == "") {
       setError("Enter a password");
+    }   if (regInp.email == "") {
+      setError("Enter an email");
     } else if (regInp.pwd.length <= 8) {
       setError("password must be 8 characters");
     } else {
       navi("/Comfirm_code");
+      // console.log(regInp)
     }
+  }
+
+  function pwd_input(e) {
+    setError("");
+    setRegInp({ ...regInp, pwd: e.target.value });
+
   }
 
   return (
@@ -44,11 +69,14 @@ export default function Signup() {
 
           <form action="">
             <header className="mb-10 max-md:mb-5 max-md:text-xs">
-              <Link to="/Signup" className=" text-teal-200 cursor-default">
+              <Link
+                to="/Signup"
+                className=" text-pri-green font-bold cursor-default "
+              >
                 SIGN UP
               </Link>
-              <b className="text-white ">/ </b>
-              <Link to="/Login" className=" text-teal-500  cursor-pointer">
+              <span className="text-teal-200 "> / </span>
+              <Link to="/Login" className=" text-teal-green  cursor-pointer">
                 LOGIN
               </Link>
             </header>
@@ -56,9 +84,7 @@ export default function Signup() {
             {/* input blocks */}
             <p className="input-ctn flex bg-neutral-500 text-white justify-between px-3 h-8 items-center  max-md:h-7">
               <input
-                onChange={(e) =>
-                  setRegInp({ ...regInp, email: e.target.value })
-                }
+                onChange={ (e) => email_input(e) }
                 value={regInp.email}
                 type="email"
                 placeholder="Email"
@@ -66,8 +92,8 @@ export default function Signup() {
               />{" "}
               <FaAngleRight
                 id={regPwd ? "drop" : ""}
-                onClick={() => setRegPwd(!regPwd)}
-                className="emailBtn text-white cursor-pointer   "
+                onClick={()=> email_check()}
+                className='emailBtn text-white cursor-pointer'
               />
             </p>
             <p
@@ -75,16 +101,14 @@ export default function Signup() {
               id={regPwd ? "drop" : ""}
             >
               <input
-                onChange={(e) => setRegInp({ ...regInp, pwd: e.target.value })}
+                onChange={(e) => pwd_input(e)}
                 value={regInp.pwd}
                 type="password"
                 placeholder="Password"
                 className="bg-transparent w-full outline-none"
               />{" "}
               <FaAngleRight
-                onClick={(e) => {
-                  signup_validator();
-                }}
+                onClick={() => pwd_check()}
                 className="text-white cursor-pointer"
               />
             </p>
@@ -93,13 +117,11 @@ export default function Signup() {
               <legend className="">or</legend>
             </fieldset>
 
-            <button className="flex bg-white w-3/4 justify-between px-3 h-10 items-center m-auto rounded-xl border-2 border-teal-950 mt-1 max-md:h-8 max-md:text-xs">
-              Sign up with wallet <FaWallet />{" "}
+            <button className="flex  text-pri-green hover:bg-pri-green hover:text-white w-3/4 justify-between px-3 h-10 items-center m-auto rounded-xl border-2 border-slate-600 mt-1 max-md:h-8 max-md:text-xs">
+              Sign up with wallet <FaWallet className="text-slate-300 " />{" "}
             </button>
 
-            {/* <h1>
-              {regInp.email} {regInp.pwd}
-            </h1> */}
+
           </form>
         </div>
       </main>

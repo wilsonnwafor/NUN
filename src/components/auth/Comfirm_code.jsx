@@ -32,16 +32,23 @@ export default function Comfirm_code() {
             action=""
             // className="max-md:w-10/12 max-md:h-48 max-md:text-xs "
           >
-            <header className="mb-5 text-sm max-md:mb-3 max-xs:text-xs">
-            <Link to="/Signup" className=" text-teal-200 cursor-default">SIGN UP</Link >
-              <b className="text-white ">/ </b>
-              <Link to="/Login" className=" text-teal-500  cursor-pointer">LOGIN</Link>
+               <header className="mb-10 max-md:mb-5 max-md:text-xs">
+              <Link
+                to="/Signup"
+                className=" text-pri-green font-bold cursor-default "
+              >
+                SIGN UP
+              </Link>
+              <span className="text-teal-200 "> / </span>
+              <Link to="/Login" className=" text-teal-green  cursor-pointer">
+                LOGIN
+              </Link>
             </header>
 
-            <h3 className="text-teal-300 text-base max-md:text-sm max-sm:text-xs">
+            <h3 className="text-pri-green text-base max-md:text-sm max-sm:text-xs">
               INPUT YOUR COMFIRMATION CODE
             </h3>
-            <p className="text-teal-300 text-xs px-10 max-md:px-5 max-sm:px-3">
+            <p className="text-pri-green text-xs px-10 max-md:px-5 max-sm:px-3">
               Almost there.. please enter the verification code sent to your
               email
             </p>
@@ -61,7 +68,7 @@ export default function Comfirm_code() {
                   <InputOTPSlot index={5} className="otp-inp" />
                 </InputOTPGroup>
               </InputOTP>
-              <p className="text-teal-600 text-sm max-md:text-xs cursor-pointer">click to resend code</p>
+              <p className="text-pri-green hover:text-teal-green text-sm max-md:text-xs cursor-pointer">click to resend code</p>
             </div>
           </form>
         </div>

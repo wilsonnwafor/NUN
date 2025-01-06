@@ -24,7 +24,7 @@ export default function Setup_pwd() {
           />
 
           <form className="h-72 max-md:h-48">
-            <header className=" text-white text-xl font-medium mb-14 max-md:mb-5 max-md:text-xs">
+            <header className=" text-pri-green text-xl font-medium mb-14 max-md:mb-5 max-md:text-xs">
               SETUP PASSWORD
             </header>
             {/* input block */}

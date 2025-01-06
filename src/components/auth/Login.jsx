@@ -33,9 +33,13 @@ export default function Login() {
             action=""
           >
             <header className="mb-10 max-md:mb-5 max-md:text-xs">
-            <Link to="/Signup" className=" text-teal-500 cursor-pointer">SIGN UP</Link >
-              <b className="text-white ">/ </b>
-              <Link to="/Login" className=" text-teal-200  cursor-pointer">LOGIN</Link>
+              <Link to="/Signup" className=" text-teal-green  cursor-pointer ">
+                SIGN UP
+              </Link>
+              <span className="text-teal-200 "> / </span>
+              <Link to="/Login" className="text-pri-green font-bold cursor-default">
+                LOGIN
+              </Link>
             </header>
             {/* input block */}
             <p className="input-ctn flex bg-neutral-500 text-white justify-between px-3 h-8 items-center  max-md:h-7">
@@ -72,8 +76,8 @@ export default function Login() {
                   <legend className="">or</legend>
                 </fieldset>
 
-            <button className="flex bg-white w-3/4 justify-between px-3 h-10 items-center m-auto rounded-xl border-2 border-teal-950 mt-1 max-md:h-8 max-md:text-xs">
-              Sign up with wallet <FaWallet />{" "}
+            <button className="flex  text-pri-green hover:bg-pri-green hover:text-teal-50 w-3/4 justify-between px-3 h-10 items-center m-auto rounded-xl border-2 border-slate-600 mt-1 max-md:h-8 max-md:text-xs">
+              Continue with wallet <FaWallet className="text-slate-300 " />{" "}
             </button>
 
             <h1>
