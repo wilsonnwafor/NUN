@@ -1,7 +1,12 @@
+import { usePrivy } from "@privy-io/react-auth";
 import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Landing() {
+  const { ready, authenticated, login } = usePrivy()
+
+  // Disable login when Privy is not ready or the user is already authenticated
+  const disableLogin = !ready || (ready && authenticated);  
   return (
     <>
 
@@ -26,12 +31,16 @@ export default function Landing() {
             </button>
           </Link>
           <Link to="/Login">
-            <button className="text-teal-50 border-2 border-teal-green rounded-xl hover:bg-teal-green w-28 p-1 m-3 max-md:p-0 max-md:w-24">
+            <button 
+              className="text-teal-50 border-2 border-teal-green rounded-xl hover:bg-teal-green w-28 p-1 m-3 max-md:p-0 max-md:w-24"
+              disabled={disableLogin} onClick={login}
+            >
               {" "}
               LOGIN
-            </button>
+            </button> 
           </Link>
         </main>
+
     </>
   );
 }
