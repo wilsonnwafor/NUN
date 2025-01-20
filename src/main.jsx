@@ -8,7 +8,7 @@ import { PrivyProvider } from '@privy-io/react-auth';
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <PrivyProvider
-      appId='cm4r4bh4402sgg4f05rg4z1e9'
+      appId={import.meta.env.VITE_PUBLIC_PRIVY_APP_ID}
       config={{
         loginMethods: ["email", "wallet"],
         appearance: {
