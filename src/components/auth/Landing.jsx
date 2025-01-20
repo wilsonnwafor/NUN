@@ -1,12 +1,14 @@
 import { usePrivy } from "@privy-io/react-auth";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Landing() {
   const { ready, authenticated, login } = usePrivy()
+  const navigate = useNavigate();
 
   // Disable login when Privy is not ready or the user is already authenticated
   const disableLogin = !ready || (ready && authenticated);  
+
   return (
     <>
 
