@@ -1,9 +1,9 @@
 import React from "react";
 
-import { InputOTP, InputOTPGroup, InputOTPSlot } from "../ui/input-otp";
+import {InputOTPGroup, InputOTP,  InputOTPSlot } from "../ui/input-otp";
 
 import { Link } from "react-router-dom";
-// import InputOtp from '/ui/input-otp.jsx'; // or adjust if needed
+// import { InputOTP } from '../../ui/input-otp'
 
 export default function Comfirm_code() {
   const [value, setValue] = React.useState("");
