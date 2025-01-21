@@ -1,6 +1,8 @@
 import React from "react";
 
-import {InputOTPGroup, InputOTP,  InputOTPSlot } from "../ui/input-otp.jsx";
+import { InputOTPGroup, InputOTP, InputOTPSlot } from "@/components/ui/input-otp";
+
+
 
 import { Link } from "react-router-dom";
 // import { InputOTP } from '../../ui/input-otp'
