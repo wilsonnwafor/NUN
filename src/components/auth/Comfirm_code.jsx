@@ -1,6 +1,6 @@
 import React from "react";
 
-import { InputOTPGroup, InputOTP, InputOTPSlot } from "@/components/ui/input-otp";
+import { InputOTPGroup, InputOTP, InputOTPSlot } from "../ui/input-otp.jsx";
 
 
 
