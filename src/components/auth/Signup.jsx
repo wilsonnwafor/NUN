@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaAngleRight, FaWallet } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import Comfirm_code from "./Comfirm_code";
+// import Comfirm_code from "./Comfirm_code";
 {
   /* <Comfirm_code/> */
 }
