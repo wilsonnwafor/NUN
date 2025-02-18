@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')).render(
         loginMethods: ["email", "wallet"],
         appearance: {
           theme: "dark",
-          logo: "src/assets/nun-logo2.png"    
+          logo: "/assets/nun-logo2.png"    
         },
       }}
     >
